@@ -25,7 +25,7 @@ pipeline{
         stage("Continous Build"){
 
             steps{
-                sh 'mvn clean install'
+                sh 'mvn clean install git'
             }
         }
         stage("Static Test Analysis"){
